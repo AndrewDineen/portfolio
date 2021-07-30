@@ -1,0 +1,30 @@
+input {
+  display: block;
+  opacity: 0.1;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  width: 90%;
+  height: 30px;
+  color:black;
+}
+textarea {
+  display: block;
+  display: block;
+  opacity: 0.1;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-top: 1rem;
+  width: 90%;
+  height: 100px;
+}
+label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+

@@ -1,0 +1,20 @@
+.name{
+	margin-top: 110px;
+	font-size: 2.4rem;
+	letter-spacing: 3px;
+	margin-bottom: 0.9rem;
+}
+.name-container{
+	text-align: left;
+	padding: 0 1rem;
+	
+}
+.line{
+	
+
+width: 45px;
+height: 0px;
+
+border: 5.4px solid #098BEA;
+background-color: #098BEA;
+}

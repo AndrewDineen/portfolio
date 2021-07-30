@@ -1,0 +1,31 @@
+:root{
+	--main-bg-color: #333646;
+	--secondary-bg-color: #ffffff;
+	--ternary-bg-color: #040402;
+	--accent-color: #098bea;
+}
+.nav-container{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 2;
+	background-color: var(--main-bg-color);
+}
+.button{
+	font-weight: 500;
+	letter-spacing: 0.25px;
+	text-align: center;
+	width: 20%;
+	height: 20%;
+	margin-right: 10%;
+	padding: 0.75rem 1rem;
+	background-color: var(--accent-color);
+	vertical-align: center;
+}
+.menu{
+	margin-top: 6px;
+	vertical-align: center;
+}

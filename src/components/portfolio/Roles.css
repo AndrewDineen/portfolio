@@ -1,0 +1,103 @@
+/* @keyframes display {
+  0% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes displayTwo {
+  0%, 50% {
+    opacity: 0;
+  }
+  55%, 95% {
+    opacity: 1;
+  }
+  100%{
+	opacity: 0;
+  }
+}
+
+@keyframes displayThree {
+  0%, 67% {
+    opacity: 0;
+  }
+  70%, 97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+.role-container {
+  padding-left: 3rem;
+  padding-top: 6rem;
+  background: #252734;
+  width: calc(75% - 3rem);
+  height: calc(346px - 5rem);
+  position: relative;
+  overflow: hidden;
+  top: -100px;
+  left: 12.5%;
+}
+
+.role-one > p{
+  /* animation: display 6s linear infinite; */
+  width: 110%;
+}
+
+.role-two {
+  /* animation: displayTwo 12s linear infinite; */
+}
+
+.role-three {
+  /* animation: displayThree 18s linear infinite; */
+}
+
+.small-line {
+  width: 41px;
+  height: 0px;
+
+  opacity: 0.2;
+  border: 1px solid #ffffff;
+  margin-bottom: 1.2rem;
+}
+
+.role-content {
+margin-right: 50%;
+  top: 20%;
+  left: 17%;
+  opacity: 1;
+  text-align: left;
+  width: 168.75px;
+}
+.product-text {
+  font-size: 1.1rem;
+  line-height: 1.56rem;
+  letter-spacing: 0.05rem;
+  opacity: 0.6;
+}
+.roles {
+  margin-bottom: -700px;
+}
+.product-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.075rem;
+  color: #ffffff;
+  margin-bottom: 1.4rem;
+  margin-top: 1.1rem;
+}
+
+.role-container:nth-child(2) {
+  top: -446px;
+}
+.role-container:nth-child(3) {
+  top: -792px;
+}

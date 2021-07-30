@@ -1,0 +1,32 @@
+.numbers {
+  font-weight: 600;
+  font-size: 5.3rem;
+  line-height: 7.5rem;
+  vertical-align: middle;
+  color: #098bea;
+}
+
+.stat-text {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  margin-left: 1.2rem;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  line-height: 2rem;
+}
+.stat-text-2 {
+	font-weight: 600;
+	font-size: 1.25rem;
+	letter-spacing: 0.05em;
+	margin-left: 1.2rem;
+	display: inline-block;
+	width: 40%;
+	vertical-align: middle;
+	line-height: 2rem;
+      }
+
+.stats-container{
+	padding-bottom: 10rem;
+}
