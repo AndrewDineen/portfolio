@@ -6,8 +6,9 @@ const Form = () => {
 			<input></input>
 			<label>Your E-mail</label>
 			<input></input>
-			<label>Tell me about your project</label>
+			<label>Tell me about the opportunity</label>
 			<textarea></textarea>
+			<div type="submit" className="button" style={{width: '100px', borderRadius:'5px'}}>Send it Away</div>
 		</form>
 	</div>);
 }

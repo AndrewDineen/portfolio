@@ -47,3 +47,18 @@ p {
 	margin-left: 0.5rem;
 }
 
+@media all and (min-width: 1300px){
+	.initial-intro .sub-title{
+		font-size: 0.95rem;
+		
+	}
+	.initial-intro .title{
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+	}
+	.initial-intro .information-paragraph{
+		font-size: 0.8rem;
+		line-height: 1.6rem;
+	}
+}
+

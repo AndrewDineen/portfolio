@@ -6,7 +6,7 @@
   color: #098bea;
 }
 
-.stat-text {
+.stat-text-1 {
   font-weight: 600;
   font-size: 1.25rem;
   letter-spacing: 0.05em;
@@ -28,5 +28,26 @@
       }
 
 .stats-container{
-	padding-bottom: 10rem;
+	padding-bottom: 12rem;
+	width: 100%;
+}
+.stats-sub-container{
+	display: inline-block;
+}
+
+
+@media all and (min-width: 1300px) {
+	.stats-container{
+		width: 1200%;
+		margin-left: 0;
+	}
+	
+	.stats-sub-container .numbers{
+		font-size: 4rem;
+	}
+	.stats-sub-container .stat-text{
+		font-size: 1rem;
+		line-height: 1.5rem;
+		
+	}
 }

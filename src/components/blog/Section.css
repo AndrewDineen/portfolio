@@ -12,3 +12,36 @@
 	font-weight: bold;
 }
 
+@media all and (min-width: 1300px){
+	.blog-card-container{
+		display: flex;
+		justify-content: center;
+	}
+	.blog-container .blog-card{
+		margin: 0 20px;
+		height: 45vh;
+		width: 20%;
+	}
+	.blog-card .coming-soon, .blog-card .coming-soon-details{
+		font-size: 1.1rem;
+		width: 70%;
+	}
+}
+
+@media all and (min-width: 1300px){
+	.blog-container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.blog-heading-container{
+		align-self: center;
+	}
+	.blog-heading-container > .sub-title{
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+	.blog-heading-container > .title{
+		font-size: 2rem;
+	}
+}

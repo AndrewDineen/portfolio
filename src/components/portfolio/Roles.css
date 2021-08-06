@@ -1,61 +1,28 @@
-/* @keyframes display {
-  0% {
-    opacity: 0;
-  }
-  10%, 90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes displayTwo {
-  0%, 50% {
-    opacity: 0;
-  }
-  55%, 95% {
-    opacity: 1;
-  }
-  100%{
-	opacity: 0;
-  }
-}
-
-@keyframes displayThree {
-  0%, 67% {
-    opacity: 0;
-  }
-  70%, 97% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
 .role-container {
   padding-left: 3rem;
-  padding-top: 6rem;
+  padding-top: 5rem;
   background: #252734;
-  width: calc(75% - 3rem);
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
   height: calc(346px - 5rem);
   position: relative;
   overflow: hidden;
   top: -100px;
-  left: 12.5%;
+  transition: 0.5s;
+}
+.role-container-x {
+	display: none;
 }
 
-.role-one > p{
-  /* animation: display 6s linear infinite; */
-  width: 110%;
+.role-container:hover {
+  background-color: #098bea;
 }
-
-.role-two {
-  /* animation: displayTwo 12s linear infinite; */
+.role-container:hover path {
+  color: white;
 }
-
-.role-three {
-  /* animation: displayThree 18s linear infinite; */
+path {
+  transition: 0.5s;
 }
 
 .small-line {
@@ -68,14 +35,12 @@
 }
 
 .role-content {
-margin-right: 50%;
-  top: 20%;
-  left: 17%;
+  margin-right: 50%;
   opacity: 1;
   text-align: left;
   width: 168.75px;
 }
-.product-text {
+.role-text {
   font-size: 1.1rem;
   line-height: 1.56rem;
   letter-spacing: 0.05rem;
@@ -84,7 +49,7 @@ margin-right: 50%;
 .roles {
   margin-bottom: -700px;
 }
-.product-title {
+.role-title {
   font-style: normal;
   font-weight: 600;
   font-size: 1.75rem;
@@ -95,9 +60,29 @@ margin-right: 50%;
   margin-top: 1.1rem;
 }
 
-.role-container:nth-child(2) {
-  top: -446px;
-}
-.role-container:nth-child(3) {
-  top: -792px;
+@media all and (min-width: 1300px) {
+  .role-container-x {
+    display: block;
+  }
+  .role-container-primary{
+	  display: none;
+  }
+  .role-container {
+    margin: 0 7px;
+    height: 230px;
+    width: 250px;
+  }
+  .role-content {
+    top: 10%;
+  }
+  .role-title {
+    font-size: 1.4rem;
+    line-height: normal;
+  }
+  .role-text {
+    font-size: 0.9rem;
+  }
+  .small-line {
+    width: 32px;
+  }
 }

@@ -1,10 +1,24 @@
 .profile-image{
 	display: block;
 	width: 95%;
+	max-width: 500px;
 	filter: drop-shadow(-24px 3px 80px rgba(0, 0, 0, 0.4));
+	margin-left: auto;
+	margin-right: auto;
 
 }
-.portrait-container{
-	padding-left: 2rem;
-	
+
+@media all and (min-width: 1200px){
+	.portrait-container{
+		display: inline-block;
+		width: 40%;
+		margin-top: -6%;
+	}
+}
+
+@media all and (min-width: 1300px){
+	.portrait-container{
+		width: 60%;
+		margin-top: 0;
+	}
 }

@@ -6,19 +6,19 @@ import { DiMongodb } from 'react-icons/di';
 const Section = () => {
 	const rolesInfo = [{
 		role: 'Front End Engineer.',
-		icon: <FaReact/>,
+		icon: <FaReact className="icon"/>,
 		numProjects: 5,
 		cName: 'role-one'
 	},
 	{
 		role: 'Back End Engineer.',
-		icon: <FaNodeJs/>,
+		icon: <FaNodeJs className="icon"/>,
 		numProjects: 5,
 		cName: 'role-two'
 	},
 	{
 		role: 'Database Engineer.',
-		icon: <DiMongodb/>,
+		icon: <DiMongodb className="icon"/>,
 		numProjects: 5,
 		cName: 'role-three'
 	}

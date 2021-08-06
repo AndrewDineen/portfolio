@@ -13,10 +13,15 @@ const Section = () => {
 	}
 	return (<div className="primary-background heading-section">
 		<Nav></Nav>
-		<Name></Name>
-		<Social></Social>
-		<Introduction intro={Intro}></Introduction>
-		<Portrait></Portrait>
+		<div className="heading-contents">
+			<div className="name-social-container">
+			<Name></Name>
+			<Social></Social>
+			</div>
+			<Introduction intro={Intro} cName="initial-intro"></Introduction>
+			<Portrait></Portrait>
+		</div>
+
 	</div>);
 }
 export default Section;

@@ -1,6 +1,5 @@
 .contact-container {
   color: black;
-  text-align: left;
   padding-top: 6rem;
 }
 .contact-sub {
@@ -9,7 +8,9 @@
   letter-spacing: 0.03em;
   opacity: 0.7;
 }
-
+.contact-sub-container{
+	width: 100%;
+}
 .contact-title {
   width: 70%;
 }
@@ -35,4 +36,74 @@
 
 a {
   color: inherit;
+}
+
+@media all and (min-width: 1200px) {
+  .contact-sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-sub-container{
+	  max-width: 1100px;
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+  .contact-col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media all and (min-width: 1300px) {
+  .contact-sub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+  }
+  .contact-col-1 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  .contact-col-1 .contact-sub {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .contact-col-1 .contact-title {
+    margin-left: 0;
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+  .contact-col-1 .contact-paragraph {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+  .contact-col-1 .large-link {
+    margin-left: 0;
+    font-size: 1.1rem;
+    width: 68%;
+  }
+  .contact-col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  .contact-col-2 .title {
+    margin-left: 0;
+    margin-top: 6%;
+    margin-bottom: 3.5%;
+    font-size: 1.8rem;
+  }
+
+  .contact-col-2 .information-paragraph {
+    margin-left: 0;
+    margin-bottom: 2.2rem;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+  }
 }

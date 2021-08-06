@@ -1,8 +1,19 @@
 .social-icons-container{
 	display: flex;
 	justify-content: space-around;
-	width: 30%;
+	width: 112.5px;
 	margin: 4rem;
 	margin-left: 1rem;
 	margin-bottom: 6rem;
+}
+
+@media all and (min-width: 1200px){
+	.social-icons-container{
+		margin-bottom: 0;
+	}
+}
+@media all and (min-width: 1300px){
+	.social-icons-container{
+		margin-left: 0;
+	}
 }

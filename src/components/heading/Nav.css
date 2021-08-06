@@ -1,31 +1,100 @@
-:root{
-	--main-bg-color: #333646;
-	--secondary-bg-color: #ffffff;
-	--ternary-bg-color: #040402;
-	--accent-color: #098bea;
+:root {
+  --main-bg-color: #333646;
+  --secondary-bg-color: #ffffff;
+  --ternary-bg-color: #040402;
+  --accent-color: #098bea;
 }
-.nav-container{
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem;
-	position: fixed;
-	width: 100%;
-	top: 0px;
-	z-index: 2;
-	background-color: var(--main-bg-color);
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  background-color: var(--main-bg-color);
 }
-.button{
-	font-weight: 500;
-	letter-spacing: 0.25px;
-	text-align: center;
-	width: 20%;
-	height: 20%;
-	margin-right: 10%;
-	padding: 0.75rem 1rem;
-	background-color: var(--accent-color);
-	vertical-align: center;
+
+
+.button {
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  text-align: center;
+  width: 75.39px;
+  height: 21px;
+  margin-right: 10%;
+  padding: 0.75rem 1rem;
+  background-color: var(--accent-color);
+  vertical-align: center;
+  cursor: pointer;
 }
-.menu{
-	margin-top: 6px;
-	vertical-align: center;
+.button > a{
+	text-decoration: none;
+}
+.menu {
+  margin-top: 6px;
+  vertical-align: center;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 50px;
+}
+.nav-list {
+  display: none;
+  justify-content: center;
+  width: 60%;
+  margin-left: 13.5%;
+  margin-right: auto;
+}
+
+
+li a {
+  text-decoration: none;
+	font-size: 1.05rem;
+	letter-spacing: 0.1rem;
+
+  color: #ffffff;
+
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+li svg {
+  opacity: 0;
+  margin-left: 2px;
+  transition: opacity 0.5s;
+}
+li a:hover {
+  opacity: 1;
+}
+
+li a:hover + svg {
+  opacity: 1;
+}
+
+.nav-list-container {
+
+  display: none;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  background-color: var(--main-bg-color);
+}
+
+.bar-button{
+	margin-top: 0.5rem;
+	display: none;
+}
+@media all and (min-width: 1300px){
+	.nav-list{
+		display: flex;
+	}
+	.nav-list-container{
+		display: flex;
+	}
+	.bar-button{
+		display: block;
+	}
 }

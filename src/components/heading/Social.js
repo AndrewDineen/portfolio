@@ -3,7 +3,7 @@ import { IconContext } from 'react-icons/lib';
 import './Social.css';
 const Social = () => {
 	return (<div className="social-icons-container">
-		<IconContext.Provider value={{ color: '#fff', size: "1.75rem" }}>
+		<IconContext.Provider value={{ color: '#fff', size: window.matchMedia('(min-width: 1300px)').matches ? "1.4rem" : "1.75rem" }}>
 			<a href="https://github.com/AndrewDineen" target="_blank">
 				<AiFillGithub />
 			</a>

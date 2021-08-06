@@ -12,10 +12,10 @@ const Roles = (props) => {
 		translate: 100,
 		transition: 0.5,
 		activeIndex: 0,
-		roles: [thirdRole,  firstRole, secondRole]
+		roles: [thirdRole, firstRole, secondRole]
 	});
 
-	const { translate, transition, activeIndex, roles} = state;
+	const { translate, transition, activeIndex, roles } = state;
 
 
 	const autoPlayRef = useRef();
@@ -50,9 +50,9 @@ const Roles = (props) => {
 
 	const smoothTransition = () => {
 		let roles = [...state.roles]
-		if (activeIndex === roles.length - 1) {roles = [secondRole, thirdRole, firstRole];}
-		else if (activeIndex === 0) {roles = [thirdRole, firstRole, secondRole];}
-		else {roles = [firstRole, secondRole, thirdRole];}
+		if (activeIndex === roles.length - 1) { roles = [secondRole, thirdRole, firstRole]; }
+		else if (activeIndex === 0) { roles = [thirdRole, firstRole, secondRole]; }
+		else { roles = [firstRole, secondRole, thirdRole]; }
 		setState({
 			...state,
 			roles,
@@ -70,16 +70,33 @@ const Roles = (props) => {
 	}
 
 	return (
-		<div className="role-container">
-			<IconContext.Provider value={{ color: '#098bea', size: '2.4rem' }}>
-				<RoleContent translate={translate} transition={transition} activeIndex={activeIndex}>
-					{roles.map((elem, idx) => (
-						<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} />
-					))}
-				</RoleContent>
+		<>
+			<div className="role-container role-container-primary">
+				<IconContext.Provider value={{ color: '#098bea', size: '2.4rem' }}>
+					<RoleContent translate={translate} transition={transition} activeIndex={activeIndex} autoPlay={true}>
+						{roles.map((elem, idx) => (
+							<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} />
+						))}
+					</RoleContent>
 
-			</IconContext.Provider>
-		</div>
+				</IconContext.Provider>
+			</div>
+			<div style={{ width: '886px', display: 'flex', justifyContent:'space-around', marginLeft: 'auto', marginRight: 'auto' }}>
+				
+				{roles.map((elem, idx) => {
+					
+					return <div className={"role-container-" + idx + " role-container role-container-x"}>
+						<IconContext.Provider value={{ color: '#098bea', size: '2.4rem', className: 'icon' }} key={idx}>
+							<RoleContent>
+								<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} />
+							</RoleContent>
+
+						</IconContext.Provider>
+					</div>
+				})}
+			</div>
+		</>
+
 	);
 }
 

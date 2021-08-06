@@ -57,6 +57,7 @@ html{
 .App-link {
   color: #61dafb;
 }
+p{max-width: 722px;}
 
 
 @keyframes App-logo-spin {
