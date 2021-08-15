@@ -6,7 +6,7 @@ const Section = () => {
 			<p className="title form-title">GOT A PROJECT?</p>
 			<p className="line form-line"></p>
 			<p className="form-sub">Let's Talk</p>
-			<p className="form-info">If you would like to know more, or schedule an interview, use this form or send me an <a href="mailto:addineen@gmail.com">email</a> for a quicker response.</p>
+			<p className="form-info">If you would like to know more, or schedule an interview, use this form or send me an <a href="mailto:addineen@gmail.com">email</a>.</p>
 		</div>
 		<Form></Form>
 	</div>);
