@@ -8,31 +8,31 @@ import {GrContact} from 'react-icons/gr';
 const MenuData = [
 	{
 		title: 'Introduction',
-		ref: '#intro',
+		ref: 'intro',
 		icon: <AiOutlineProfile/>,
 		cName: 'nav-links'
 	},
 	{
 		title: 'Experience',
-		ref: '#experience',
+		ref: 'experience',
 		icon: <GiSkills/>,
 		cName: 'nav-links'
 	},
 	{
 		title: 'Projects',
-		ref: '#projects',
+		ref: 'projects',
 		icon: <GrProjects className="icon"/>,
 		cName: 'nav-links'
 	},
 	{
 		title: 'Blogs',
-		ref: '#intro',
+		ref: 'blogs',
 		icon: <GrArticle className="icon"/>,
 		cName: 'nav-links'
 	},
 	{
 		title: 'Contact',
-		ref: '#contact',
+		ref: 'contact',
 		icon: <GrContact className="icon"/>,
 		cName: 'nav-links'
 	}
