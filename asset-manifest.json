@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.6c96dfc9.chunk.css",
+    "main.js": "/portfolio/static/js/main.eee93cec.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.eee93cec.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.33f3cdbf.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.33f3cdbf.js.map",
+    "static/js/2.3f5a19f9.chunk.js": "/portfolio/static/js/2.3f5a19f9.chunk.js",
+    "static/js/2.3f5a19f9.chunk.js.map": "/portfolio/static/js/2.3f5a19f9.chunk.js.map",
+    "static/js/3.1d6eb20b.chunk.js": "/portfolio/static/js/3.1d6eb20b.chunk.js",
+    "static/js/3.1d6eb20b.chunk.js.map": "/portfolio/static/js/3.1d6eb20b.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.6c96dfc9.chunk.css.map": "/portfolio/static/css/main.6c96dfc9.chunk.css.map",
+    "static/js/2.3f5a19f9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3f5a19f9.chunk.js.LICENSE.txt",
+    "static/media/fridge_combined.98514e1c.png": "/portfolio/static/media/fridge_combined.98514e1c.png",
+    "static/media/meTwo.88ced587.png": "/portfolio/static/media/meTwo.88ced587.png",
+    "static/media/notetaking.2f71df04.png": "/portfolio/static/media/notetaking.2f71df04.png",
+    "static/media/turing-combined.c9648195.png": "/portfolio/static/media/turing-combined.c9648195.png",
+    "static/media/xuri-combined-2.568c4ac2.png": "/portfolio/static/media/xuri-combined-2.568c4ac2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33f3cdbf.js",
+    "static/js/2.3f5a19f9.chunk.js",
+    "static/css/main.6c96dfc9.chunk.css",
+    "static/js/main.eee93cec.chunk.js"
+  ]
+}
