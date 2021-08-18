@@ -27,7 +27,7 @@
   letter-spacing: 0.05em;
   font-weight: 400;
   opacity: 0.7;
-  margin-bottom: 5rem;
+  
 }
 
 .form-line {
@@ -48,21 +48,13 @@
   margin-right: auto;
 }
 
-@media all and (min-width: 1300px) {
-  .form-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0rem;
-  }
-  .form-title{
-	  margin-top: 0;
-  }
-  .form-container div{
-	  width: 33%;
-  }
-  .contact-column-1{
-	  margin-right: 8rem;
-  }
+
+@media all and (max-width: 682px){
+	.form-info{
+		margin-bottom: 75px;
+	}
+	.schedule-line{
+		margin-bottom: 78px;
+	}
+	
 }

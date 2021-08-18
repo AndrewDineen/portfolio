@@ -7,7 +7,6 @@ import PortfolioSection from './components/portfolio/Section';
 import Footer from './components/contact-form/Footer';
 
 
-
 function App() {
 	return (
 		<div className="App">

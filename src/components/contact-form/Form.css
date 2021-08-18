@@ -28,5 +28,35 @@ label {
   line-height: 24px;
   letter-spacing: 0.05em;
   opacity: 0.8;
+  
+}
+.form-contents{
+	width: 65%;
+}
+@media all and (min-width: 1650px){
+	.form-contents{
+		width: 55%;
+	}
 }
 
+@media all and (max-width: 800px){
+	.form-contents{
+		width: 75%;
+	}
+}
+@media all and (max-width: 700px){
+	.form-contents{
+		width: 80%;
+	}
+}
+@media all and (max-width: 600px){
+	.form-contents{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 682px){
+	form{
+		margin-top: -200px;
+	}
+}
