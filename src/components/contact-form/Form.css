@@ -1,26 +1,29 @@
 input {
   display: block;
-  opacity: 0.1;
-  border-bottom: 1px solid #ffffff;
+  background-color: #474a58;
+  outline: none;
+  border: none;
   margin-bottom: 1.5rem;
   margin-top: 1rem;
   border-radius: 4px;
   max-width: 700px;
   width: 90%;
   height: 30px;
-  color: black;
+  color: white;
+  
 }
 textarea {
   display: block;
-  display: block;
-  opacity: 0.1;
+  background-color: #474a58;
+  outline: none;
+  border: none;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #ffffff;
   border-radius: 4px;
   margin-top: 1rem;
   width: 90%;
   height: 100px;
   max-width: 700px;
+  color: white;
 }
 label {
   font-weight: 600;
@@ -28,35 +31,34 @@ label {
   line-height: 24px;
   letter-spacing: 0.05em;
   opacity: 0.8;
-  
 }
-.form-contents{
-	width: 65%;
+.form-contents {
+  width: 65%;
 }
-@media all and (min-width: 1650px){
-	.form-contents{
-		width: 55%;
-	}
-}
-
-@media all and (max-width: 800px){
-	.form-contents{
-		width: 75%;
-	}
-}
-@media all and (max-width: 700px){
-	.form-contents{
-		width: 80%;
-	}
-}
-@media all and (max-width: 600px){
-	.form-contents{
-		width: 100%;
-	}
+@media all and (min-width: 1650px) {
+  .form-contents {
+    width: 55%;
+  }
 }
 
-@media all and (max-width: 682px){
-	form{
-		margin-top: -200px;
-	}
+@media all and (max-width: 800px) {
+  .form-contents {
+    width: 75%;
+  }
+}
+@media all and (max-width: 700px) {
+  .form-contents {
+    width: 80%;
+  }
+}
+@media all and (max-width: 600px) {
+  .form-contents {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 682px) {
+  form {
+    margin-top: -200px;
+  }
 }
