@@ -2,8 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { IconContext } from 'react-icons';
 import Role from './Role';
 import RoleContent from './RoleContent';
+import RoleBox from './RoleBox';
 import './Roles.css';
 const Roles = (props) => {
+	
 	const firstRole = props.rolesInfo[0];
 	const secondRole = props.rolesInfo[1];
 	const thirdRole = props.rolesInfo[2];
@@ -75,24 +77,24 @@ const Roles = (props) => {
 				<IconContext.Provider value={{ color: '#098bea', size: '2.4rem' }}>
 					<RoleContent translate={translate} transition={transition} activeIndex={activeIndex} autoPlay={true}>
 						{roles.map((elem, idx) => (
-							<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} />
+							<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} idx={idx} />
 						))}
 					</RoleContent>
 
 				</IconContext.Provider>
 			</div>
-			<div style={{ width: '886px', display: 'flex', justifyContent:'space-around', marginLeft: 'auto', marginRight: 'auto' }}>
-				
+			<div style={{ width: '886px', display: 'flex', justifyContent: 'space-around', marginLeft: 'auto', marginRight: 'auto' }}>
+
 				{roles.map((elem, idx) => {
-					
-					return <div className={"role-container-" + idx + " role-container role-container-x"}>
+
+					return <RoleBox idx={idx}>
 						<IconContext.Provider value={{ color: '#098bea', size: '2.4rem', className: 'icon' }} key={idx}>
-							<RoleContent>
-								<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} />
+							<RoleContent idx={idx}>
+								<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} />
 							</RoleContent>
 
 						</IconContext.Provider>
-					</div>
+					</RoleBox>
 				})}
 			</div>
 		</>

@@ -30,6 +30,7 @@
   background-color: var(--accent-color);
   vertical-align: center;
   cursor: pointer;
+  animation: fade-in 1s;
 }
 .button > a{
 	text-decoration: none;
@@ -49,6 +50,7 @@
   width: 60%;
   margin-left: 13.5%;
   margin-right: auto;
+  animation: nav-load 1s;
 }
 
 
@@ -106,5 +108,39 @@ li a:hover + svg {
 	}
 	.nav-menu{
 		display: none;
+	}
+}
+
+@keyframes nav-load{
+	0%{
+		opacity: 0;
+		transform: translateY(-100%);
+		
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+}
+
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+		
+	}
+	100%{
+		opacity: 1;
+		
+	}
+}
+@keyframes fade-in-box{
+	0%{
+		opacity: 0.4;
+		
+	}
+	100%{
+		opacity: 1;
+		
 	}
 }

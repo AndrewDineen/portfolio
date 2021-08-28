@@ -8,10 +8,10 @@ const Section = () => {
 				<p className="title contact-title blog-title">Blogs</p>
 			</div>
 			<div className="blog-card-container">
-				<BlogCard></BlogCard>
+				<BlogCard idx={0}></BlogCard>
 				<div className="additional-blogs">
-					<BlogCard></BlogCard>
-					<BlogCard></BlogCard>
+					<BlogCard idx={1}></BlogCard>
+					<BlogCard idx={2}></BlogCard>
 				</div>
 
 

@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 const RoleContent = (props) => {
+	
 	return(
 		props.autoPlay ? (
 			<div style={{
@@ -12,7 +14,7 @@ const RoleContent = (props) => {
 				{props.children}
 			</div>
 		):(
-			<div style={{height: '100%', width: '100%'}}>
+			<div style={{height: '100%', width: '100%',}}>
 				{props.children}
 			</div>
 		)

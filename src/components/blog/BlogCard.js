@@ -1,8 +1,33 @@
+import { useEffect, useRef } from 'react';
 import NoteTaking from '../../Images/notetaking.png';
 import './BlogCard.css';
-const BlogCard = () => {
+const BlogCard = (props) => {
+	const blogRef = useRef(null);
+	useEffect(() => {
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.4
+		}
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					if (props.idx == 1) {
+						entry.target.style.animation = 'fade-in 1s forwards';
+					} else if (props.idx == 0) {
+						entry.target.style.animation = 'fade-in 1s forwards';
+					} else {
+						entry.target.style.animation = 'fade-in 1s forwards';
+					}
+				} else {
+					entry.target.style.animation = 'fade-out 1s forwards';
+				}
+			});
+		}, options);
+		observer.observe(blogRef.current);
+	}, []);
 	return (
-		<div className="blog-card">
+		<div className="blog-card" ref={blogRef}>
 			<div className="back-drop">
 				<p className="coming-soon">Coming Soon</p>
 				<p className="coming-soon-details">This part of the site is currently under construction, please check back later for details.</p>

@@ -4,9 +4,14 @@
   letter-spacing: 0.03em;
   opacity: 0.7;
 }
+.initial-intro{
+	animation: intro-animation 1s;
+}
+
 .introduction-container {
   text-align: left;
   padding-left: 1rem;
+  
 }
 
 .title {
@@ -30,7 +35,9 @@ p {
   font-weight: 300;
   margin-top: 0.2rem;
 }
-
+.project-intro{
+	opacity: 0;
+}
 .large-link {
   display: flex;
   font-weight: 600;
@@ -61,4 +68,13 @@ p {
 		line-height: 1.6rem;
 	}
 }
-
+@keyframes intro-animation{
+	0%{
+		opacity: 0;
+		transform: translateX(10%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

@@ -6,6 +6,7 @@
   background: #0e0d0f;
   text-align: left;
   position: relative;
+  opacity: 0;
 }
 .coming-soon {
   position: absolute;

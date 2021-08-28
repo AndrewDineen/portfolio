@@ -3,6 +3,7 @@ import Introduction from '../heading/Introduction';
 import ProjectCard from './ProjectCard';
 import ProjectData from './ProjectData';
 const Projects = () => {
+	
 	const Intro = {
 		subTitle: "/ My Projects",
 		title: "Portfolio",
@@ -10,6 +11,8 @@ const Projects = () => {
 		link: "Explore More"
 	}
 	
+	
+
 	return (<div id="projects">
 		<div className="projects-first-column">
 			<Introduction intro={Intro} cName="project-intro"></Introduction>

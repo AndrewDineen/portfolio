@@ -1,7 +1,9 @@
-const Role = (props) => {
-	return (
 
-		<div className={"role-content " + props.cName} >
+const Role = (props) => {
+
+
+	return (
+		<div className={"role-content " + props.cName}>
 			{props.icon}
 			<p className="role-title">{props.role}</p>
 			<div className="small-line"></div>
