@@ -2,6 +2,8 @@
   height: 50px;
   display: flex;
   justify-content: flex-start;
+  opacity: 0;
+  animation: fade-in 1s forwards;
 }
 
 .icon path {
