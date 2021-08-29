@@ -4,20 +4,7 @@ import {useEffect, useRef} from 'react';
 
 const ProjectCard = (props) => {
 	const projectRef = useRef(null);
-	const colOneProjectRef = useRef(null);
-	const colTwoProjectOneRef = useRef(null);
-	const colTwoProjectTwoRef = useRef(null);
-	// useEffect(() => {
-	// 	const options = {
-	// 		root: null,
-	// 		rootMargin: "0px",
-	// 		threshold: 0.3
-	// 	}
-	// 	const observer = new IntersectionObserver((entries) => {
-			
-	// 	}, options)
-	// 	observer.observe(introRef.current);
-	// }, []);
+	
 	useEffect(() => {
 		const options = {
 			root: null,

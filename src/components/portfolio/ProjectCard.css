@@ -12,7 +12,15 @@
   opacity: 0;
 }
 
+:root{
+	--translate-long-slide-left: 0;
+}
 
+@media all and (min-width: 600px){
+	:root{
+		--translate-long-slide-left: -60%;
+	}	
+}
 @media all and (min-width: 768px) {
   #projects {
     display: flex;
@@ -153,7 +161,7 @@
 @keyframes col-one{
 	0%{
 		opacity: 0%;
-		transform: translateX(-60%);
+		transform: translateX(var(--translate-long-slide-left));
 	}
 	100%{
 		opacity: 100%;
@@ -161,24 +169,3 @@
 	}
 }
 
-@keyframes fade-up{
-	0%{
-		opacity: 0;
-		transform: translateY(-20%);
-	}
-	100%{
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-@keyframes fade-down{
-	0%{
-		opacity: 0;
-		transform: translateY(20%);
-	}
-	100%{
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
