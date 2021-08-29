@@ -1,11 +1,30 @@
 import { useEffect, useRef, useState } from 'react';
 import { IconContext } from 'react-icons';
 import Role from './Role';
-import RoleContent from './RoleContent';
 import RoleBox from './RoleBox';
+import RoleContent from './RoleContent';
 import './Roles.css';
 const Roles = (props) => {
-	
+	const roleRef = useRef(null);
+	useEffect(() => {
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.1
+		}
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+
+					entry.target.style.animation = 'fade-in 1s forwards';
+
+				} else {
+					entry.target.style.animation = 'fade-out 1s forwards';
+				}
+			});
+		}, options);
+		observer.observe(roleRef.current);
+	}, []);
 	const firstRole = props.rolesInfo[0];
 	const secondRole = props.rolesInfo[1];
 	const thirdRole = props.rolesInfo[2];
@@ -73,17 +92,16 @@ const Roles = (props) => {
 
 	return (
 		<>
-			<div className="role-container role-container-primary">
+			<div className="role-container role-container-primary" ref={roleRef}>
 				<IconContext.Provider value={{ color: '#098bea', size: '2.4rem' }}>
 					<RoleContent translate={translate} transition={transition} activeIndex={activeIndex} autoPlay={true}>
 						{roles.map((elem, idx) => (
 							<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} idx={idx} />
 						))}
 					</RoleContent>
-
 				</IconContext.Provider>
 			</div>
-			<div style={{ width: '886px', display: 'flex', justifyContent: 'space-around', marginLeft: 'auto', marginRight: 'auto' }}>
+			<div className="role-container-secondary">
 
 				{roles.map((elem, idx) => {
 
