@@ -1,71 +1,71 @@
-.heading-section{
-	position: relative;
-	height: 100%;
-	text-align: left;
+.heading-section {
+  position: relative;
+  height: 100%;
+  text-align: left;
 }
-.name-social-container{
-	animation: name-social-animation 1s;
+.name-social-container {
+  animation: name-social-animation 1s;
 }
-
-
-@media all and (min-width: 1200px){
-	.initial-intro{
-		display: inline-block;
-		width: 50%;
-		position: relative;
-		top: -250px;
-		margin-bottom: -100px;
-	}
-
+:root {
+  --translate-value-left: 0;
 }
 
-@media all and (min-width: 1300px){
-	.heading-contents{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: relative;
-		right: 7%;
-		
-	}
-	.initial-intro{
-		top:0%;
-		right: 6%;
-		order: 3;
-		width: 400px;
-		z-index: 1;
-	}
-	
-	.name{
-		font-size: 3.5rem;
-	}
-	.name-social-container{
-		position: relative;
-		left: 23%;
-		top: -40px;
-		z-index: 1;
-	}
+@media all and (min-width: 1200px) {
+  .initial-intro {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    top: -250px;
+    margin-bottom: -100px;
+  }
 }
 
-@media all and (min-width: 1600px){
-	
-	.initial-intro{
-		right: 10%;
-		
-	}
-	
-	.name-social-container{
-		left: 29%;
-		
-	}
+@media all and (min-width: 1300px) {
+  .heading-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 7%;
+  }
+  :root {
+    --translate-value-left: -10%;
+  }
+  .initial-intro {
+    top: 0%;
+    right: 6%;
+    order: 3;
+    width: 400px;
+    z-index: 1;
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+  .name-social-container {
+    position: relative;
+    left: 23%;
+    top: -40px;
+    z-index: 1;
+  }
 }
-@keyframes name-social-animation{
-	0%{
-		opacity: 0;
-		transform: translateX(-10%);
-	}
-	100%{
-		opacity: 1;
-		transform: translateX(0);
-	}
+
+@media all and (min-width: 1600px) {
+  .initial-intro {
+    right: 10%;
+  }
+
+  .name-social-container {
+    left: 29%;
+  }
+}
+@keyframes name-social-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--translate-value-left));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

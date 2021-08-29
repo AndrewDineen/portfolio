@@ -1,17 +1,19 @@
+:root {
+  --translate-value-right: 0;
+}
 .sub-title {
   font-size: 1.15rem;
   font-weight: 450;
   letter-spacing: 0.03em;
   opacity: 0.7;
 }
-.initial-intro{
-	animation: intro-animation 1s;
+.initial-intro {
+  animation: intro-animation 1s;
 }
 
 .introduction-container {
   text-align: left;
   padding-left: 1rem;
-  
 }
 
 .title {
@@ -35,46 +37,48 @@ p {
   font-weight: 300;
   margin-top: 0.2rem;
 }
-.project-intro{
-	opacity: 0;
+.project-intro {
+  opacity: 0;
 }
 .large-link {
   display: flex;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.9rem;
-  
+
   letter-spacing: 0.05em;
   text-decoration-line: underline;
   color: #098bea;
 }
 
-.arrow{
-	margin-top: 0.45rem;
-	margin-left: 0.5rem;
+.arrow {
+  margin-top: 0.45rem;
+  margin-left: 0.5rem;
 }
 
-@media all and (min-width: 1300px){
-	.initial-intro .sub-title{
-		font-size: 0.95rem;
-		
-	}
-	.initial-intro .title{
-		font-size: 1.8rem;
-		line-height: 2.5rem;
-	}
-	.initial-intro .information-paragraph{
-		font-size: 0.8rem;
-		line-height: 1.6rem;
-	}
+@media all and (min-width: 1300px) {
+  .initial-intro .sub-title {
+    font-size: 0.95rem;
+  }
+  :root {
+    --translate-value-right: 10%;
+  }
+  .initial-intro .title {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+  .initial-intro .information-paragraph {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+  }
 }
-@keyframes intro-animation{
-	0%{
-		opacity: 0;
-		transform: translateX(10%);
-	}
-	100%{
-		opacity: 1;
-		transform: translateX(0);
-	}
+@keyframes intro-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--translate-value-right));
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

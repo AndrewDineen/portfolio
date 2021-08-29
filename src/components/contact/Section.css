@@ -118,7 +118,7 @@ a {
 @keyframes left-column-in{
 	0%{
 		opacity: 0;
-		transform: translateX(-10%);
+		transform: translateX(var(--translate-value-left));
 	}
 	100%{
 
@@ -135,14 +135,14 @@ a {
 	}
 	100%{
 		opacity: 0;
-		transform: translateX(-10%);
+		transform: translateX(var(--translate-value-left));
 	}
 }
 
 @keyframes right-column-in{
 	0%{
 		opacity: 0;
-		transform: translateX(10%);
+		transform: translateX(var(--translate-value-right));
 	}
 	100%{
 		opacity: 1;
@@ -157,6 +157,6 @@ a {
 	}
 	100%{
 		opacity: 0;
-		transform: translateX(10%);
+		transform: translateX(var(--translate-value-right));
 	}
 }
