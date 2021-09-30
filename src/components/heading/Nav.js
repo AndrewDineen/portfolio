@@ -16,9 +16,9 @@ const Nav = () => {
 			</div>
 			<div className="nav-list-container">
 				<ul className="nav-list">
-					{MenuData.map((elem) => {
+					{MenuData.map((elem, idx) => {
 						return (
-							<li><Link
+							<li key={idx}><Link
 								activeClass="active"
 								to={elem.ref}
 								spy={true}
@@ -34,7 +34,7 @@ const Nav = () => {
 						)
 
 					})}
-					
+
 				</ul>
 				<div className="bar-button button"><Link activeClass="active"
 					to="contact"

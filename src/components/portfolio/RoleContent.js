@@ -8,13 +8,13 @@ const RoleContent = (props) => {
 				transition: `transform ease-out ${props.transition}s`,
 				height: '100%',
 				width: `100%`,
-				display:'flex'
+				display:'flex',
 	
 			}} className="role-content-transition">
 				{props.children}
 			</div>
 		):(
-			<div style={{height: '100%', width: '100%',}}>
+			<div style={{height: '100%', width: '100%', cursor: 'pointer'}}>
 				{props.children}
 			</div>
 		)

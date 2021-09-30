@@ -105,7 +105,7 @@ const Roles = (props) => {
 
 				{roles.map((elem, idx) => {
 
-					return <RoleBox idx={idx}>
+					return <RoleBox idx={idx} rolesInfo={props.rolesInfo}>
 						<IconContext.Provider value={{ color: '#098bea', size: '2.4rem', className: 'icon' }} key={idx}>
 							<RoleContent idx={idx}>
 								<Role role={elem.role} icon={elem.icon} numProjects={elem.numProjects} cName={elem.cName} key={idx} />

@@ -1,5 +1,5 @@
-import { InlineWidget } from "react-calendly";
 import { useEffect, useRef } from "react";
+import { InlineWidget } from "react-calendly";
 const Calendar = () => {
 	const calendarRef = useRef(null);
 	const options = {
@@ -19,11 +19,11 @@ const Calendar = () => {
 			});
 		}, options);
 		observer.observe(calendarRef.current);
-		
+
 	}, []);
 	return (
-		<div style={{ marginBottom: '5rem'}} ref={calendarRef}>
-			<InlineWidget url="https://calendly.com/andrewdineen" pageSettings={{ backgroundColor: '252734', textColor: 'ffffff'}} styles={{ height: '700px' }} ></InlineWidget>
+		<div style={{ marginBottom: '5rem' }} ref={calendarRef}>
+			<InlineWidget url="https://calendly.com/andrewdineen" pageSettings={{ backgroundColor: '252734', textColor: 'ffffff' }} styles={{ height: '700px' }} ></InlineWidget>
 		</div>
 	)
 };
