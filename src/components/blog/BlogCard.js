@@ -30,7 +30,7 @@ const BlogCard = (props) => {
 		<div className="blog-card" ref={blogRef}>
 			<div className="back-drop">
 				<p className="coming-soon">Coming Soon</p>
-				<p className="coming-soon-details">This part of the site is currently under construction, please check back later for details.</p>
+				<p className="coming-soon-details">This part of the site is currently under construction, stay tuned for details.</p>
 			</div>
 			<img src={NoteTaking} className="blog-card-img"></img>
 			<div className="blog-text-container">

@@ -7,8 +7,8 @@ import Social from './Social';
 const Section = () => {
 	const Intro = {
 		subTitle: "/ This is me",
-		title: "Software Engineer In The Making.",
-		paragraph: "I'm a recent Computer Science graduate seeking employment as a software engineer in the Seattle Area. When I'm not programming, I like to read, learn new languages, and study interesting academic subjects.",
+		title: "Aspiring Software Engineer.",
+		paragraph: "I'm a consultant seeking employment as a backend software engineer. When I'm not programming, I like to read and study interesting academic subjects.",
 		link: "My story"
 	}
 	return (<div className="primary-background heading-section">

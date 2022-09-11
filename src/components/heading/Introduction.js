@@ -23,7 +23,7 @@ const Introduction = (props) => {
 	}, [])
 
 	return (<div className={props.cName + " introduction-container"} ref={introRef}>
-		<p className="sub-title" id="intro">{props.intro.subTitle}</p>
+		
 		<p className="title">{props.intro.title}</p>
 		<p className="information-paragraph">{props.intro.paragraph}</p>
 
