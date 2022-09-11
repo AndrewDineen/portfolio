@@ -5,7 +5,7 @@ import Roles from './Roles';
 const Section = () => {
 	const listPadding = {paddingTop: '10px'};
 	const rolesInfo = [{
-		role: 'Front End Engineer.',
+		role: 'Front End',
 		icon: <FaReact className="icon" />,
 		numProjects: 5,
 		cName: 'role-one',
@@ -13,14 +13,14 @@ const Section = () => {
 
 	},
 	{
-		role: 'Back End Engineer.',
+		role: 'Back End',
 		icon: <FaNodeJs className="icon" />,
 		numProjects: 5,
 		cName: 'role-two',
 		skills: [<li style={listPadding}>NodeJS</li>]
 	},
 	{
-		role: 'Database Engineer.',
+		role: 'Databases',
 		icon: <DiMongodb className="icon" />,
 		numProjects: 5,
 		cName: 'role-three',
