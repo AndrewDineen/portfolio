@@ -1,6 +1,5 @@
 import { createContext, useState } from 'react';
 import './App.css';
-import BlogSection from './components/blog/Section';
 import Footer from './components/contact-form/Footer';
 import ContactForm from './components/contact-form/Section';
 import ContactSection from './components/contact/Section';
@@ -18,7 +17,6 @@ function App() {
 			</SidebarProvider>
 			<ContactSection></ContactSection>
 			<PortfolioSection></PortfolioSection>
-			<BlogSection></BlogSection>
 			<ContactForm></ContactForm>
 			<div className="blog-line divider"></div>
 			<Footer onClick={toggleSidebar}></Footer>
