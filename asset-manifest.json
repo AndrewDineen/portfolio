@@ -1,27 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9bdf7516.chunk.css",
-    "main.js": "/portfolio/static/js/main.3afc5637.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3afc5637.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.fabc76f9.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.fabc76f9.js.map",
-    "static/js/2.65e32a38.chunk.js": "/portfolio/static/js/2.65e32a38.chunk.js",
-    "static/js/2.65e32a38.chunk.js.map": "/portfolio/static/js/2.65e32a38.chunk.js.map",
-    "static/js/3.c9628ab9.chunk.js": "/portfolio/static/js/3.c9628ab9.chunk.js",
-    "static/js/3.c9628ab9.chunk.js.map": "/portfolio/static/js/3.c9628ab9.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.7e699498.css",
+    "main.js": "/portfolio/static/js/main.a0f6032d.js",
+    "static/js/453.ea41da1c.chunk.js": "/portfolio/static/js/453.ea41da1c.chunk.js",
+    "static/media/xuri-combined-2.png": "/portfolio/static/media/xuri-combined-2.568c4ac21c256d155744.png",
+    "static/media/turing-combined.png": "/portfolio/static/media/turing-combined.c9648195db0e98cce2eb.png",
+    "static/media/meTwo.png": "/portfolio/static/media/meTwo.88ced5873122df619f75.png",
+    "static/media/fridge_combined.png": "/portfolio/static/media/fridge_combined.98514e1c3e6f5397a728.png",
     "index.html": "/portfolio/index.html",
-    "static/css/main.9bdf7516.chunk.css.map": "/portfolio/static/css/main.9bdf7516.chunk.css.map",
-    "static/js/2.65e32a38.chunk.js.LICENSE.txt": "/portfolio/static/js/2.65e32a38.chunk.js.LICENSE.txt",
-    "static/media/fridge_combined.98514e1c.png": "/portfolio/static/media/fridge_combined.98514e1c.png",
-    "static/media/meTwo.88ced587.png": "/portfolio/static/media/meTwo.88ced587.png",
-    "static/media/notetaking.2f71df04.png": "/portfolio/static/media/notetaking.2f71df04.png",
-    "static/media/turing-combined.c9648195.png": "/portfolio/static/media/turing-combined.c9648195.png",
-    "static/media/xuri-combined-2.568c4ac2.png": "/portfolio/static/media/xuri-combined-2.568c4ac2.png"
+    "main.7e699498.css.map": "/portfolio/static/css/main.7e699498.css.map",
+    "main.a0f6032d.js.map": "/portfolio/static/js/main.a0f6032d.js.map",
+    "453.ea41da1c.chunk.js.map": "/portfolio/static/js/453.ea41da1c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.fabc76f9.js",
-    "static/js/2.65e32a38.chunk.js",
-    "static/css/main.9bdf7516.chunk.css",
-    "static/js/main.3afc5637.chunk.js"
+    "static/css/main.7e699498.css",
+    "static/js/main.a0f6032d.js"
   ]
 }
