@@ -25,12 +25,6 @@ const MenuData = [
 		cName: 'nav-links'
 	},
 	{
-		title: 'Blogs',
-		ref: 'blogs',
-		icon: <GrArticle className="icon"/>,
-		cName: 'nav-links'
-	},
-	{
 		title: 'Contact',
 		ref: 'contact',
 		icon: <GrContact className="icon"/>,

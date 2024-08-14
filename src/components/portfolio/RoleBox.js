@@ -43,7 +43,7 @@ const RoleBox = (props) => {
 			}} ref={backRoleRef}>
 				{isFlipped ? <div style={{position: 'absolute', left: '0', top: '0', width: '100%', height: '100%'}}>
 					 <h3 style={{paddingTop: '20px'}}>Languages & Frameworks</h3> 
-					 <ul style={{listStyle: 'none', paddingLeft:'0', paddingTop: '30px'}}>{props.rolesInfo[(props.idx + 2) % 3].skills}</ul> 
+					 <ul style={{listStyle: 'none', paddingLeft:'0', paddingTop: '30px'}}>{props.rolesInfo[props.idx].skills}</ul> 
 					 </div>: ''
 				}
 			</div>

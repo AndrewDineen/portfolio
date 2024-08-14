@@ -17,14 +17,14 @@ const Section = () => {
 		icon: <FaNodeJs className="icon" />,
 		numProjects: 5,
 		cName: 'role-two',
-		skills: [<li style={listPadding}>NodeJS</li>]
+		skills: [<li style={listPadding}>C#</li>, <li style={listPadding}>NodeJS</li>]
 	},
 	{
 		role: 'Databases',
 		icon: <DiMongodb className="icon" />,
 		numProjects: 5,
 		cName: 'role-three',
-		skills: [<li style={listPadding}>MongoDB</li>, <li style={listPadding}>SQL</li>]
+		skills: [<li style={listPadding}>SQL</li>, <li style={listPadding}>MongoDB</li>]
 	}
 	];
 	return (<div>
