@@ -49,7 +49,7 @@ const Section = () => {
 				</div>
 				<div className="contact-col-2" ref={colTwoRef} data-num={2}>
 					<p className="title contact-title" id="experience">I have experience working with several clients and companies.</p>
-					<p className="information-paragraph contact-paragraph paragraph-two">Technologies I've used the most include NodeJS, Express, ReactJS, and SQL.</p>
+					<p className="information-paragraph contact-paragraph paragraph-two">Technologies I've used the most include R, SQL, Tableau, Google Sheets, NodeJS, Express, ReactJS.</p>
 					<Stats></Stats>
 				</div>
 			</div>

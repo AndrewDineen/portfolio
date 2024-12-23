@@ -6,7 +6,7 @@ const Projects = () => {
 	
 	const Intro = {
 		subTitle: "/ My Projects",
-		title: "Portfolio",
+		title: "Software Projects",
 		paragraph: "Here are just a few of the projects that I've completed in addition to this website which was built with React. If you're interested in seeing my other projects, feel free to reach out!",
 		link: "Explore More"
 	}

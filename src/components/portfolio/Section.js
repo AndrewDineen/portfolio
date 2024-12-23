@@ -1,6 +1,7 @@
 import { DiMongodb } from 'react-icons/di';
 import { FaNodeJs, FaReact } from 'react-icons/fa';
-import Projects from './Projects';
+import SoftwareProjects from './SoftwareProjects';
+import DataProjects from './DataProjects';
 import Roles from './Roles';
 const Section = () => {
 	const listPadding = {paddingTop: '10px'};
@@ -29,7 +30,8 @@ const Section = () => {
 	];
 	return (<div>
 		<Roles rolesInfo={rolesInfo}></Roles>
-		<Projects ></Projects>
+		<DataProjects></DataProjects>
+		<SoftwareProjects ></SoftwareProjects>
 	</div>);
 }
 
