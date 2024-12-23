@@ -8,7 +8,7 @@ const Section = () => {
 	const Intro = {
 		subTitle: "/ This is me",
 		title: "Data Analyst",
-		paragraph: "I'm a former Software Developer seeking employment oportunities in the field of Data Analytics in the Greater Seattle Area. When I'm not working on my projects, I like to read and study interesting academic subjects.",
+		paragraph: "I'm a former Software Developer seeking employment opportunities in the field of Data Analytics in the Greater Seattle Area. When I'm not working on my projects, I like to read and study interesting academic subjects.",
 		link: "My story"
 	}
 	return (<div className="primary-background heading-section">
